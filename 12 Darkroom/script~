@@ -1,0 +1,7 @@
+index=1;
+for name in *.jpg
+do
+    cp "${name}" "11.${index}.jpg"
+    rm "${name}"
+    index=$((index+1))
+done
